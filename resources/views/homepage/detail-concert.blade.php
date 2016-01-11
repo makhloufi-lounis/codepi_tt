@@ -151,9 +151,6 @@
 
                     });
                 })()
-
-
-
             });
 
 
@@ -163,7 +160,7 @@
 
             (function(){
                 $.ajax({
-                    url: "/search-video?artist=" + $('artist-name').text(),
+                    url: "/search-video?artist=" + $('.artist-name').text(),
                     dataType:   'json',
                     success: function(data)
                     {
