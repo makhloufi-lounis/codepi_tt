@@ -97,9 +97,11 @@
                 </div>
             @endforeach
 
-            <div class="text-center">
-                    <?php echo $concerts->render() ?>
-            </div>
+            <div class="home">
+                <div class="text-center">
+                        <?php echo $concerts->render() ?>
+                </div>
+            <div>
         </div>
     </div>
     <script>
@@ -107,7 +109,7 @@
         /**
          * Pagination
          */
-        $(document).on('click','.pagination a', function(e){
+        $(document).on('click','.home .pagination a', function(e){
             e.preventDefault();
             var page = $(this).attr('href').split('page=')[1];
             getConcerts(page);

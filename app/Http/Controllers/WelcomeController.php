@@ -127,6 +127,7 @@ class WelcomeController extends Controller
      */
     public function show(Request $request)
     {
+
         $id_concert = (int) $request->get('concert');
         $id_artiste = (int) $request->get('artiste');
 

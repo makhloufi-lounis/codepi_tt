@@ -20,15 +20,14 @@ Route::get('/detail-concert', 'WelcomeController@show');
 
 Route::get('/search-video', 'WelcomeController@search');
 
-/*Route::group(['prefix' => 'admin', 'middleware' => 'ip'], function() {
-    Route::get('salut', function(){
-      return 'salut';
-    });
-});*/
+Route::get('/admin', 'Admin\UserController@index');
 
-/*
+
+Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function() {
+    Route::resource('concerts','ConcertController');
+});
+
 Route::controllers([
     'auth' => 'Auth\AuthController',
     'password' => 'Auth\PasswordController',
 ]);
-*/

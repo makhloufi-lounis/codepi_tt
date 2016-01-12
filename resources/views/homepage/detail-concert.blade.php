@@ -59,6 +59,7 @@
                                 Retour en haut de page
                             </a>
                         </div>
+                        <br/>
                     </div>
                 </div>
                 <div class="col-md-4">
